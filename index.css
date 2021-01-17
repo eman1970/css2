@@ -131,7 +131,7 @@ a:active {
            
         }
 
-        @media only screen and (max-width: 768px) {
+       
 
             /* For desktop: */
             .col-1 {
@@ -182,7 +182,7 @@ a:active {
                 width: 100%;
             }
 
-        }
+     
 
         div.example {
   background-color: transparent;
@@ -196,11 +196,12 @@ a:active {
   }
 }
 
-
+@media only screen and (max-width: 768px) {
         /* For mobile phones: */
         [class*="col-"] {
             width: 100%;
         }
+    }
 
 
         img {
