@@ -19,35 +19,112 @@
 }
 
 html {
-  font-family: "Lucida Sans", sans-serif;
+  font-family: Arial, Helvetica;
 }
+
+h1 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#8b4513;
+
+}
+
+h2 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#8b4513;
+}
+
+p {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:#8b4513;
+}
+
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8b4513;
+}
+
+a:visited {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8b4513;
+}
+
+a:hover {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+ 
+  
+}
+
+a:active {
+  background-color: transparent;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #8b4513;
+}
+        
 
 .header {
   background-color: #9933cc;
   color: #ffffff;
   padding: 15px;
 }
+.grid-container {
+            display: grid;
+            grid-template-areas:
+                'header header header header header header'
+                'menu main main main main main'
+                'main footer footer footer footer footer';
+            grid-gap: 6px;
+            background-color: #8b4513;
+            padding: 8px;
+        }
+
+        .grid-container>div {
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
 
 .menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+            list-style-type: none;
+            margin: 0;
 
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
+            padding: 0;
+        }
 
-.menu li:hover {
-  background-color: #0099cc;
-}
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #c0c0c0;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            margin-left: .3em;
+            margin-right: .3em;
+            margin-top: .3em;
+            margin-bottom: .3em;
+            
+
+            font-size: 18px;
+        }
+
+        .menu li:hover {
+            background-color: #b88560;
+            
+        }
 
 .aside {
-  background-color: #33b5e5;
+  background-color:#33b5e5;
   padding: 15px;
   color: #ffffff;
   text-align: center;
@@ -62,6 +139,8 @@ html {
   font-size: 12px;
   padding: 15px;
 }
+
+ 
 
 /* For mobile phones: */
 [class*="col-"] {
@@ -87,6 +166,7 @@ html {
 </head>
 <body>
 
+    <div class="grid-container">
 <div class="header">
   <h1>Chania</h1>
 </div>
@@ -94,10 +174,10 @@ html {
 <div class="row">
   <div class="col-3 menu">
     <ul>
-      <li>The Flight</li>
-      <li>The City</li>
-      <li>The Island</li>
-      <li>The Food</li>
+        <li><a href="#" title="Hem">Hem</a></li>
+        <li><a href="#" title="Baka">Baka</a></li>
+        <li><a href="#" title="Desserter">Desserter</a></li>
+        <li><a href="#" title="Desserter">Drycker</a></li>
     </ul>
   </div>
 
@@ -115,11 +195,13 @@ html {
       <h2>How?</h2>
       <p>You can reach Chania airport from all over Europe.</p>
     </div>
-  </div>
+   
 </div>
 
 <div class="footer">
   <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+</div>
 </div>
 
 </body>
